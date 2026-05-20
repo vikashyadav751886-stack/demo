@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere | Premium Gadgets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Professional Navbar -->
+    <header>
+        <div class="logo">Shop<span>Sphere</span></div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search premium gadgets...">
+        </div>
+        <button class="cart-btn" id="cartBtn">
+            🛒 Cart <span id="cartCount">0</span>
+        </button>
+    </header>
+
+    <!-- Main Section -->
+    <div class="main-container">
+        <!-- Categories Sidebar -->
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <div class="filter-group">
+                <button class="filter-btn active" data-category="all">All Products</button>
+                <button class="filter-btn" data-category="audio">Audio & Music</button>
+                <button class="filter-btn" data-category="wearables">Smart Wearables</button>
+                <button class="filter-btn" data-category="gaming">Gaming Setup</button>
+            </div>
+        </aside>
+
+        <!-- Products Area -->
+        <main class="products-section">
+            <h2 id="categoryTitle">All Products</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- JavaScript automatically will insert products here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Right Side Cart Slider -->
+    <div class="cart-slider" id="cartSlider">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-cart" id="closeCart">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Selected items will show here -->
+        </div>
+        <div class="cart-footer">
+            <div class="total-price">Total: ₹<span id="cartTotal">0</span></div>
+            <button class="checkout-btn" onclick="alert('Checkout feature coming soon!')">Checkout Now</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
